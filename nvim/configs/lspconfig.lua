@@ -15,7 +15,7 @@ configs.kos_language_server = {
 }
 
 -- if you just want default config for the servers then put them in a table
-local servers = { "html", "cssls", "clangd", "kos_language_server", "rust_analyzer", "marksman" }
+local servers = { "html", "cssls", "clangd", "kos_language_server", "rust_analyzer", "marksman", "pylsp" }
 
 lspconfig.denols.setup {
   on_attach = on_attach,
