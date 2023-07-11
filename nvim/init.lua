@@ -5,3 +5,6 @@ vim.wo.relativenumber = true
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
