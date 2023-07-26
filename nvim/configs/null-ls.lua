@@ -28,4 +28,5 @@ local sources = {
 null_ls.setup {
   debug = true,
   sources = sources,
+  on_attach = require("lspconfig.configs").on_attach,
 }
