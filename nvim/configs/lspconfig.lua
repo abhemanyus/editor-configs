@@ -16,6 +16,8 @@ configs.kos_language_server = {
 
 -- if you just want default config for the servers then put them in a table
 local servers = {
+  "eslint",
+	"svelte",
 	"terraformls",
 	"html",
 	"cssls",
@@ -35,7 +37,9 @@ lspconfig.denols.setup({
 lspconfig.tsserver.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
-	root_dir = root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
+	root_dir = function()
+		return root_pattern("package.json", "tsconfig.json", "jsconfig.json") and not root_pattern("svelte.config.js")
+	end,
 })
 
 lspconfig.java_language_server.setup({

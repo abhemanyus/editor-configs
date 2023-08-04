@@ -18,8 +18,8 @@ local sources = {
 
   -- custom stuff
   b.diagnostics.shellcheck,
-  b.code_actions.eslint_d,
-  b.diagnostics.eslint_d,
+  -- b.code_actions.eslint,
+  -- b.diagnostics.eslint,
   b.code_actions.gitsigns,
   b.formatting.rustfmt,
   b.diagnostics.deno_lint,

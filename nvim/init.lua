@@ -6,6 +6,8 @@ vim.wo.relativenumber = true
 --   command = "tabdo wincmd =",
 -- })
 
+vim.opt.smartcase = true
+vim.opt.smarttab = true
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldenable = true
