@@ -1,10 +1,14 @@
-theme = "onedark"
+theme = "tokyonight_storm"
 
 [editor]
 true-color = true
 line-number = "relative"
 mouse = false
-bufferline = "always"
+bufferline = "multiple"
+auto-save = true
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
 
 [editor.cursor-shape]
 insert = "bar"
