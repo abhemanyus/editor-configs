@@ -14,19 +14,19 @@ formatter = { command = 'prettier', args = ["--parser", "css"] }
 name = "javascript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
-language-servers = [ { name = "eslint" , except-features = [ "format" ] }, { name = "typescript-language-server" } ]
+language-servers = [ { name = "eslint" , except-features = [ "format" ] }, "typescript-language-server" ]
 
 [[language]]
 name = "typescript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
-language-servers = [ { name = "eslint" , except-features = [ "format" ] }, { name = "typescript-language-server" } ]
+language-servers = [ { name = "eslint" , except-features = [ "format" ] }, "typescript-language-server" ]
 
 [[language]]
 name = "tsx"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
-language-servers = [ { name = "eslint" , except-features = [ "format" ] }, { name = "typescript-language-server" } ]
+language-servers = [ { name = "eslint" , except-features = [ "format" ] }, "typescript-language-server" ]
 
 [language-server.eslint]
 args = ["--stdio"]
