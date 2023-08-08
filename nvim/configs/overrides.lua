@@ -2,7 +2,6 @@ local M = {}
 
 M.treesitter = {
   ensure_installed = {
-    "vim",
     "lua",
     "html",
     "css",
@@ -15,6 +14,9 @@ M.treesitter = {
 
     -- custom stuff
     "rust",
+    "svelte",
+    "python",
+    "mermaid",
   },
   git = {
     enable = true,
@@ -55,8 +57,8 @@ M.mason = {
 
     -- custom stuff
     "rust-analyzer",
-    "codespell",
-    "eslint_d",
+    "spell",
+    "eslint",
     "rustfmt",
     "shellcheck",
     "marksman",

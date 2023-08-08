@@ -54,7 +54,9 @@ local plugins = {
 
 	{
 		"christoomey/vim-tmux-navigator",
-		lazy = false,
+		cond = function ()
+    	return os.getenv("TMUX") ~= nil
+    end
 	},
 
 	{
@@ -66,7 +68,7 @@ local plugins = {
 
 	{
 		"Exafunction/codeium.vim",
-		lazy = false,
+		event = "BufEnter"
 	},
 
 	-- To make a plugin not be loaded

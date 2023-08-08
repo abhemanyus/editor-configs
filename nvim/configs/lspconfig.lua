@@ -16,7 +16,6 @@ configs.kos_language_server = {
 
 -- if you just want default config for the servers then put them in a table
 local servers = {
-  "eslint",
 	"svelte",
 	"terraformls",
 	"html",
@@ -42,14 +41,6 @@ lspconfig.tsserver.setup({
 	end,
 })
 
-lspconfig.java_language_server.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-	filetypes = { "java" },
-	root_dir = root_pattern(".git"),
-	cmd = { "/home/sanndy/.local/share/nvim/mason/packages/java-language-server/dist/lang_server_linux.sh" },
-})
-
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup({
 		on_attach = on_attach,
@@ -57,5 +48,3 @@ for _, lsp in ipairs(servers) do
 	})
 end
 
---
--- lspconfig.pyright.setup { blabla}

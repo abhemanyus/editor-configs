@@ -3,12 +3,9 @@ local null_ls = require "null-ls"
 local b = null_ls.builtins
 
 local sources = {
-  b.formatting.codespell,
-  b.diagnostics.codespell,
-
   -- webdev stuff
   b.formatting.deno_fmt, -- chosen deno for ts/js files cuz its very fast!
-  b.formatting.prettier.with { filetypes = { "html", "markdown", "css" } }, -- so prettier works only on these filetypes
+  b.formatting.prettier, -- so prettier works only on these filetypes
 
   -- Lua
   b.formatting.stylua,
@@ -18,15 +15,14 @@ local sources = {
 
   -- custom stuff
   b.diagnostics.shellcheck,
-  -- b.code_actions.eslint,
-  -- b.diagnostics.eslint,
+  b.diagnostics.eslint,
   b.code_actions.gitsigns,
   b.formatting.rustfmt,
   b.diagnostics.deno_lint,
+  b.completion.spell,
 }
 
 null_ls.setup {
-  debug = true,
   sources = sources,
   on_attach = require("lspconfig.configs").on_attach,
 }
