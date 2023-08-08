@@ -4,7 +4,6 @@ local b = null_ls.builtins
 
 local sources = {
   -- webdev stuff
-  b.formatting.deno_fmt, -- chosen deno for ts/js files cuz its very fast!
   b.formatting.prettier, -- so prettier works only on these filetypes
 
   -- Lua
@@ -18,7 +17,6 @@ local sources = {
   b.diagnostics.eslint,
   b.code_actions.gitsigns,
   b.formatting.rustfmt,
-  b.diagnostics.deno_lint,
   b.completion.spell,
 }
 
