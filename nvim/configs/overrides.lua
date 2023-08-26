@@ -58,6 +58,7 @@ M.mason = {
 		"rust-analyzer",
 		"shellcheck",
 		"marksman",
+		"eslint-lsp",
 	},
 }
 
