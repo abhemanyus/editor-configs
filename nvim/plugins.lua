@@ -41,7 +41,7 @@ local plugins = {
 	-- Install a plugin
 	{
 		"max397574/better-escape.nvim",
-		event = "InsertEnter",
+		-- event = "InsertEnter",
 		config = function()
 			require("better_escape").setup()
 		end,
@@ -54,7 +54,7 @@ local plugins = {
 
 	{
 		"christoomey/vim-tmux-navigator",
-		event = "WinEnter",
+    lazy = false,
 	},
 
 	{
@@ -66,7 +66,7 @@ local plugins = {
 
 	{
 		"Exafunction/codeium.vim",
-		event = "BufEnter",
+		-- event = "BufEnter",
 	},
 
 	-- To make a plugin not be loaded
