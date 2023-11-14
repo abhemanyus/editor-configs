@@ -66,7 +66,7 @@ local plugins = {
 
 	{
 		"Exafunction/codeium.vim",
-		-- event = "BufEnter",
+		event = "BufEnter",
 	},
 
 	-- To make a plugin not be loaded
@@ -82,15 +82,6 @@ local plugins = {
 	--   "mg979/vim-visual-multi",
 	--   lazy = false,
 	-- },
-	{
-		"NeogitOrg/neogit",
-		dependencies = {
-			"nvim-lua/plenary.nvim", -- required
-			"nvim-telescope/telescope.nvim", -- optional
-			"sindrets/diffview.nvim", -- optional
-		},
-		config = true,
-	},
 }
 
 return plugins

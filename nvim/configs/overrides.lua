@@ -17,6 +17,7 @@ M.treesitter = {
 		"svelte",
 		"python",
 		"mermaid",
+    "astro",
 	},
 	git = {
 		enable = true,
@@ -75,6 +76,7 @@ M.mason = {
 		"shellcheck",
 		"marksman",
 		"eslint-lsp",
+    "astro-language-server"
 	},
 }
 

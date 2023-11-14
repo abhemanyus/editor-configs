@@ -24,7 +24,9 @@ local servers = {
 	"rust_analyzer",
 	"marksman",
 	"pylsp",
-  "tsserver"
+  "tsserver",
+  "gopls",
+  "astro"
 }
 
 for _, lsp in ipairs(servers) do

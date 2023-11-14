@@ -17,6 +17,7 @@ local sources = {
 	b.diagnostics.eslint,
 	b.code_actions.gitsigns,
 	b.formatting.rustfmt,
+  b.formatting.gofmt,
 }
 
 null_ls.setup({
