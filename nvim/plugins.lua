@@ -54,7 +54,7 @@ local plugins = {
 
 	{
 		"christoomey/vim-tmux-navigator",
-    lazy = false,
+		lazy = false,
 	},
 
 	{
@@ -65,8 +65,24 @@ local plugins = {
 	},
 
 	{
-		"Exafunction/codeium.vim",
+		"github/copilot.vim",
 		event = "BufEnter",
+		config = function()
+			vim.keymap.set("i", "<C-J>", 'copilot#Accept("<CR>")', {
+				expr = true,
+				replace_keycodes = false,
+			})
+			vim.g.copilot_no_tab_map = true
+		end,
+	},
+
+	{
+		"iamcco/markdown-preview.nvim",
+		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+		ft = { "markdown" },
+		build = function()
+			vim.fn["mkdp#util#install"]()
+		end,
 	},
 }
 
