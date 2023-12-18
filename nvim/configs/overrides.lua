@@ -17,7 +17,7 @@ M.treesitter = {
 		"svelte",
 		"python",
 		"mermaid",
-    "astro",
+    "go",
 	},
 	git = {
 		enable = true,
@@ -72,11 +72,9 @@ M.mason = {
 		"clang-format",
 
 		-- custom stuff
-		"rust-analyzer",
 		"shellcheck",
 		"marksman",
 		"eslint-lsp",
-    "astro-language-server"
 	},
 }
 
