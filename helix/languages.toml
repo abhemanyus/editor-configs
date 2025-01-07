@@ -1,1 +1,0 @@
-use-grammars = { only = [ "rust", "c", "cpp", "javascript", "typescript", "go", "html", "yaml", "json", "python", "lua", "shell" ] }
